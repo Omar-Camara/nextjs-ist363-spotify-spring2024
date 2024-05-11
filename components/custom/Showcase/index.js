@@ -10,9 +10,10 @@ import styles from "./Showcase.module.scss";
 
 const cx = classnames.bind(styles);
 
-const Showcase = ({ items }) => {
+const Showcase = ({ items, tracks }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [albums, setAlbums] = useState([]);
+  const [top, setTop] = useState([]);
   const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
@@ -49,6 +50,7 @@ const Showcase = ({ items }) => {
             items={items}
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}
+            top={top}
             latestRelease={albums.length > 0 ? albums[0] : null}
             isExpanded={isExpanded}
             setIsExpanded={setIsExpanded}

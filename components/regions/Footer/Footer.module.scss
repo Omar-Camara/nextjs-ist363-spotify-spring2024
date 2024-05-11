@@ -1,6 +1,18 @@
+// Footer.module.scss
+
 .footer {
-  background-color: gray;
+  background-color: #121212;
+  color: #b3b3b3;
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 0.9rem;
 }

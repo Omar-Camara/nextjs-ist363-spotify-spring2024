@@ -14,7 +14,6 @@ const ShowcaseContent = ({
   items,
   isExpanded,
   latestRelease,
-  topTrack,
   setActiveIndex,
   setIsExpanded,
 }) => {
