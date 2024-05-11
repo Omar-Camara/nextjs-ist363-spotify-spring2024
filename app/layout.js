@@ -1,14 +1,22 @@
+import Header from "../components/regions/Header";
+import Footer from "../components/regions/Footer";
+
 import "../sass/global.scss";
 
 export const metadata = {
   title: "IST 363 Spotify",
-  description: "Marketing page for Spotify spotlighting top 10 artists of 2024",
+  description:
+    "An application powered by Wordpress, React, Next.js and Spotify API",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

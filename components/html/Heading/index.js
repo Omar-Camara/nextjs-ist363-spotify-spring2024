@@ -6,23 +6,22 @@ const cx = classnames.bind(styles);
 const Heading = ({
   children,
   level,
-  marginBottom,
-  marginLeft,
   marginTop,
   marginRight,
+  marginBottom,
+  marginLeft,
 }) => {
   const Tag = `h${level}`;
 
   const headingClasses = cx({
     heading: true,
     [`heading--${level}`]: level,
-    [`margin-bottom--${marginBottom}`]: marginBottom,
-    [`margin-left--${marginLeft}`]: marginLeft,
     [`margin-top--${marginTop}`]: marginTop,
     [`margin-right--${marginRight}`]: marginRight,
+    [`margin-bottom--${marginBottom}`]: marginBottom,
+    [`margin-left--${marginLeft}`]: marginLeft,
   });
 
   return <Tag className={headingClasses}>{children}</Tag>;
 };
-
 export default Heading;
