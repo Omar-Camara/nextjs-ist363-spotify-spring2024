@@ -4,10 +4,10 @@ export async function GET() {
   const token = await getAccessToken();
 
   const artists = [
-    {
-      name: "Taylor Swift",
-      spotify_id: "06HL4z0CvFAxyc27GXpf02",
-    },
+    // {
+    //   name: "Taylor Swift",
+    //   spotify_id: "06HL4z0CvFAxyc27GXpf02",
+    // },
     // {
     //   name: "Beyoncé",
     //   spotify_id: "6vWDO969PvNqNYHIOW5v0m",
